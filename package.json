@@ -1,0 +1,19 @@
+{
+  "name": "pet-adoption-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pets Adoption Rest API using Node.js and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "pets"
+  ],
+  "author": "José Alvarado",
+  "license": "ISC"
+}

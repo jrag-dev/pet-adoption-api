@@ -15,5 +15,8 @@
     "pets"
   ],
   "author": "José Alvarado",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.9.6"
+  }
 }

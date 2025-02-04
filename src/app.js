@@ -3,6 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 
 import petRoutes from "./routes/pet.routes.js";
+import userRoutes from "./routes/user.routes.js";
 import "./config/db.js"
 
 
@@ -21,6 +22,7 @@ class App {
 
   routes() {
     this.app.use('/api', petRoutes);
+    this.app.use('/api', userRoutes);
   }
 }
 

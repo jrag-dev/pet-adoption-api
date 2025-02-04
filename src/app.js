@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
+import "dotenv/config";
 
+import petRoutes from "./routes/pet.routes.js";
+import "./config/db.js"
 
 
 class App {
@@ -17,9 +20,7 @@ class App {
   }
 
   routes() {
-    this.app.get("/", (req, res) => {
-      res.status(200).json({ message: "Pets Adoption"});
-    })
+    this.app.use('/api', petRoutes);
   }
 }
 
